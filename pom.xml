@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pt.paradigmshift.babel</groupId>
-    <artifactId>babel-hyparview-with-discovery</artifactId>
+    <artifactId>hyparview</artifactId>
     <version>0.1.0</version>
     <name>Babel HyParView with Discovery</name>
     <description>
@@ -48,8 +48,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <babel.sc.core.version>[0.7.1,)</babel.sc.core.version>
-        <babel.protocol.commons.version>[1.0.16,)</babel.protocol.commons.version>
+        <maven.compiler.release>17</maven.compiler.release>
+        <babel.core.version>1.0.0</babel.core.version>
+        <babel.protocols.common.version>1.0.0</babel.protocols.common.version>
     </properties>
 
     <build>
@@ -123,23 +124,18 @@
             <name>ParadigmShift Repository</name>
             <url>https://maven.paradigmshift.pt/releases</url>
         </repository>
-        <repository>
-            <id>novasys-mvn</id>
-            <name>NOVA SYS Maven (transitive deps only — babel-sc-core, babel-protocol-commons)</name>
-            <url>https://novasys.di.fct.unl.pt/packages/mvn</url>
-        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>pt.unl.fct.di.novasys.babel</groupId>
-            <artifactId>babel-sc-core</artifactId>
-            <version>${babel.sc.core.version}</version>
+            <groupId>pt.paradigmshift.babel</groupId>
+            <artifactId>babel-core</artifactId>
+            <version>${babel.core.version}</version>
         </dependency>
         <dependency>
-            <groupId>pt.unl.fct.di.novasys.babel</groupId>
-            <artifactId>babel-protocol-commons-j21</artifactId>
-            <version>${babel.protocol.commons.version}</version>
+            <groupId>pt.paradigmshift.babel</groupId>
+            <artifactId>babel-protocols-common</artifactId>
+            <version>${babel.protocols.common.version}</version>
         </dependency>
     </dependencies>
 
