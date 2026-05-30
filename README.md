@@ -5,7 +5,7 @@ with bootstrap discovery via the `DiscoverableProtocol` interface.
 Provided and evolved independently of the original work.
 
 **Group ID:** `pt.paradigmshift.babel`
-**Artifact ID:** `babel-hyparview-with-discovery`
+**Artifact ID:** `hyparview`
 **Current version:** `0.1.0`
 **Tested with:** `pt.unl.fct.di.novasys.babel:babel-sc-core` (Babel-Swarm core) and
 `babel-protocol-commons-j21` (shared dissemination / membership API surface).
@@ -88,8 +88,8 @@ Subscribe to `NeighborUp` / `NeighborDown` to track active-view membership;
 issue `GetNeighborsSampleRequest` to pull a random sample of current peers.
 The protocol fires both notifications when the active view changes.
 
-For dissemination, pair with `babel-eager-gossip-broadcast`; for
-reconciliation, pair with `babel-antientropy`.
+For dissemination, pair with `eager-gossip-broadcast`; for
+reconciliation, pair with `broadcast-antientropy`.
 
 ## Cert-based peer authentication
 
@@ -155,7 +155,7 @@ repository is listed in `pom.xml`.
 This is a ParadigmShift evolution of the original protocol. Headline changes:
 
 - Maven coordinates moved to
-  `pt.paradigmshift.babel:babel-hyparview-with-discovery`. Java package
+  `pt.paradigmshift.babel:hyparview`. Java package
   moved to `pt.paradigmshift.babel.hyparview`.
 - **Protocol ID bumped from 1400 to 2500** to avoid a collision with
   `DataProcessingProtocol` (1400) in `stoneflux-edgegateway`. Message IDs
