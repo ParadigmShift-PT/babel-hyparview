@@ -31,3 +31,6 @@ replay_pid*
 /target/
 /bin/
 */.DS_Store/
+
+# Claude Code per-project guidance (local, not committed)
+CLAUDE.md
